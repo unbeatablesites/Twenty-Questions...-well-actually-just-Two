@@ -22,6 +22,17 @@ public class App {
         String input = scan.nextLine().toLowerCase();
 
         if(input.equals("animal")){
+
+            System.out.println("Question 2) Is it bigger than a breadbox?");
+
+            input = scan.nextLine().toLowerCase();
+
+            if(input.equals("no")){
+                System.out.println("My guess is that you are thinking of a mouse.");
+
+            }
+
+
             System.out.println("Working");
         }else{
             System.out.println("not working");
