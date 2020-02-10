@@ -20,9 +20,8 @@ public class App {
         System.out.println("Question 1) Is it animal, vegetable, or mineral?");
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine().toLowerCase();
-        System.out.println(input);
 
-        if(input == "animal"){
+        if(input.equals("animal")){
             System.out.println("Working");
         }else{
             System.out.println("not working");
