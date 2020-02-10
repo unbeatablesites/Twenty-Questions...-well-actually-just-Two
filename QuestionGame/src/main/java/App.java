@@ -16,7 +16,7 @@ public class App {
                 "Think of an object, and I'll try to guess it.");
     }
 
-    public static String collectUserInputDoLogic(){
+    public static void collectUserInputDoLogic(){
         System.out.println("Question 1) Is it animal, vegetable, or mineral?");
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine().toLowerCase();
@@ -32,16 +32,20 @@ public class App {
                         "My guess is that you are thinking of a mouse.\n" +
                         "I would ask you if I'm right, but I don't actually care.");
 
-            }else {
-                System.out.println("I don't actually care.\n");
+            }
+            if(input.equals("yes")){
+                System.out.println("\n" +
+                        "My guess is that you are thinking of a moose.\n" +
+                        "I would ask you if I'm right, but I don't actually care.");
+
             }
 
-        }else{
-            System.out.println("You did'n enter the correct information and now you have to start over");
+            else {
+                System.out.println("You did'n enter the correct information and now you have to start over");
+
+            }
+
         }
-
-        return  input;
-
     }
 
 }
