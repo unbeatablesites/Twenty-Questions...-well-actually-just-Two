@@ -30,12 +30,12 @@ public class App {
             if(input.equals("no")){
                 System.out.println("My guess is that you are thinking of a mouse.");
 
+            }else {
+                System.out.println("I would ask you if I'm right, but I don't actually care.\n");
             }
 
-
-            System.out.println("Working");
         }else{
-            System.out.println("not working");
+            System.out.println("You did'n enter the correct information and now you have to start over");
         }
 
         return  input;
