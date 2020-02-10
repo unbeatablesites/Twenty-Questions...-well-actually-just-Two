@@ -28,10 +28,12 @@ public class App {
             input = scan.nextLine().toLowerCase();
 
             if(input.equals("no")){
-                System.out.println("My guess is that you are thinking of a mouse.");
+                System.out.println("\n" +
+                        "My guess is that you are thinking of a mouse.\n" +
+                        "I would ask you if I'm right, but I don't actually care.");
 
             }else {
-                System.out.println("I would ask you if I'm right, but I don't actually care.\n");
+                System.out.println("I don't actually care.\n");
             }
 
         }else{
