@@ -26,7 +26,11 @@ public class App {
 
     public static void dologic(String input){
 
-
+        if(input == "animal"){
+            System.out.println("Working");
+        }else{
+            System.out.println("not working");
+        }
 
 
     }
