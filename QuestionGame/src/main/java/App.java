@@ -73,6 +73,33 @@ public class App {
 
         }
 
+        if(input.equals("mineral")){
+
+            System.out.println("Question 2) Is it bigger than a breadbox?");
+
+            input = scan.nextLine().toLowerCase();
+
+            if(input.equals("no")){
+                System.out.println("\n" +
+                        "My guess is that you are thinking of a paper clip.\n" +
+                        "I would ask you if I'm right, but I don't actually care.");
+
+            }
+            if(input.equals("yes")){
+                System.out.println("\n" +
+                        "My guess is that you are thinking of a Camaro.\n" +
+                        "I would ask you if I'm right, but I don't actually care.");
+
+            }
+
+            else {
+                System.out.println("You did'n enter the correct information and now you have to start over");
+
+            }
+
+        }else{
+            System.out.println("You did'n enter the correct information and now you have to start over");        }
+
     }
 
 }
